@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Dropdown & Listbox</title>
+</head>
+<body>
+    <h2>Form Dropdown dan Listbox Multiple</h2>
+    
+
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Data Pilihan</legend>
+
+            <!-- Dropdown -->
+             <p><strong>Nama:</strong> Sayidina Ramadhan<br>
+                <strong>NIM:</strong> 312410112</p>
+            <p>
+                <label>Jurusan:</label>
+                <select name="jurusan">
+                    <option>Teknik Informatika</option>
+                    <option>Sistem Informasi</option>
+                    <option>Teknik Industri</option>
+                </select>
+            </p>
+
+            <!-- Listbox Multiple -->
+            <p>
+                <label>Hobi:</label><br>
+                <select name="hobi[]" multiple size="4">
+                    <option>Membaca</option>
+                    <option>Olahraga</option>
+                    <option>Musik</option>
+                    <option>Game</option>
+                </select>
+            </p>
+
+            <p><input type="submit" value="Kirim"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
